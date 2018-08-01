@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>主页</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+	function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!-- Custom Theme files -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="js/jquery.min.js"></script>
+<link rel="stylesheet" href="css/jquery.countdown.css" /> <!-- countdown --> 
+<!-- //js -->  
+<!-- web fonts --> 
+<link href='http://fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- //web fonts -->  
+<!-- start-smooth-scrolling -->
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- //end-smooth-scrolling --> 
+</head> 
+<body>
+	<!-- for bootstrap working -->
+	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+	<!-- //for bootstrap working -->
+	<!-- header modal -->
+	<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						&times;</button>
+					<h4 class="modal-title" id="myModalLabel">Don't Wait, Login now!</h4>
+				</div>
+				<div class="modal-body modal-body-sub">
+					<div class="row">
+						<div class="col-md-8 modal_body_left modal_body_left1" style="border-right: 1px dotted #C2C2C2;padding-right:3em;">
+							<div class="sap_tabs">	
+								<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+									<ul>
+										<li class="resp-tab-item" aria-controls="tab_item-0"><span>登录</span></li>
+										<li class="resp-tab-item" aria-controls="tab_item-1"><span>注册</span></li>
+									</ul>		
+									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+										<div class="facts">
+											<div class="register">
+												<form action="#" method="post">			
+													<input name="Email" placeholder="请输入账号" type="text" required="">						
+													<input name="Password" placeholder="请输入密码" type="password" required="">										
+													<div class="sign-up">
+														<input type="submit" value="登录"/>
+													</div>
+												</form>
+											</div>
+										</div> 
+									</div>	 
+									<div class="tab-2 resp-tab-content" aria-labelledby="tab_item-1">
+										<div class="facts">
+											<div class="register">
+												<form action="#" method="post">			
+													<input placeholder="账号" name="Name" type="text" required="">
+													<input placeholder="Email 地址" name="Email" type="email" required="">	
+													<input placeholder="密码" name="Password" type="password" required="">	
+													<input placeholder="确认密码" name="Password" type="password" required="">
+													<div class="sign-up">
+														<input type="submit" value="注册"/>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div> 			        					            	      
+								</div>	
+							</div>
+							<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+							<script type="text/javascript">
+								$(document).ready(function () {
+									$('#horizontalTab').easyResponsiveTabs({
+										type: 'default', //Types: default, vertical, accordion           
+										width: 'auto', //auto or any width like 600px
+										fit: true   // 100% fit in a container
+									});
+								});
+							</script>
+							<div id="OR" class="hidden-xs">OR</div>
+						</div>
+						<div class="col-md-4 modal_body_right modal_body_right1">
+							<div class="row text-center sign-with">
+								<div class="col-md-12">
+									<h3 class="other-nw">其它方式登录</h3>
+								</div>
+								<div class="col-md-12">
+									<ul class="social">
+										<li class="social_facebook"><a href="#" class="entypo-facebook"></a></li>
+										<li class="social_dribbble"><a href="#" class="entypo-dribbble"></a></li>
+										<li class="social_twitter"><a href="#" class="entypo-twitter"></a></li>
+										<li class="social_behance"><a href="#" class="entypo-behance"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$('#myModal88').modal('show');
+	</script>  
+	<!-- header modal -->
+	<!-- header -->
+	<div class="header" id="home1">
+		<div class="container">
+			<div class="w3l_login">
+				<a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+			</div>
+			<div class="w3l_logo">
+				<h1><a href="index.html">电子商城<span>电子商城. 你的选择.</span></a></h1>
+			</div>
+			<div class="search">
+				<input class="search_box" type="checkbox" id="search_box">
+				<label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
+				<div class="search_form">
+					<form action="#" method="post">
+						<input type="text" name="Search" placeholder="搜索内容...">
+						<input type="submit" value="搜索">
+					</form>
+				</div>
+			</div>
+			<div class="cart cart box_1"> 
+				<form action="#" method="post" class="last"> 
+					<input type="hidden" name="cmd" value="_cart" />
+					<input type="hidden" name="display" value="1" />
+					<button class="w3view-cart" type="submit" name="提交" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+				</form>   
+			</div>  
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- navigation -->
+	<div class="navigation">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<!-- <div class="navbar-header nav_2"> -->
+					<!-- <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs"> -->
+						<!-- <span class="sr-only">Toggle navigation</span> -->
+						<!-- <span class="icon-bar"></span> -->
+						<!-- <span class="icon-bar"></span> -->
+						<!-- <span class="icon-bar"></span> -->
+					<!-- </button> -->
+				<!-- </div>  -->
+				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html" class="act">主页</a></li>	
+						<!-- Mega Menu -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">产品 <b class="caret"></b></a>
+							<ul class="dropdown-menu multi-column columns-3">
+								<div class="row">
+									<div class="col-sm-3">
+										<ul class="multi-column-dropdown">
+											<h6>数码产品</h6>
+											<li><a href="products.html">移动电话</a></li>
+											<li><a href="products.html">Mp3 播放器 <span>New</span></a></li> 
+											<li><a href="products.html">流行产品</a></li>
+											<li><a href="products.html">所有产品<span>New</span></a></li>
+										</ul>
+									</div>
+									<div class="col-sm-3">
+										<ul class="multi-column-dropdown">
+											<h6>笔记本</h6>
+											<li><a href="products1.html">笔记本</a></li>
+											<li><a href="products1.html">平板电脑</a></li>
+											<li><a href="products1.html">Apple Watch  <span>New</span></a></li>
+											<li><a href="products1.html"><i>所有产品</i></a></li>
+										</ul>
+									</div>
+									<div class="col-sm-2">
+										<ul class="multi-column-dropdown">
+											<h6>生活家用</h6>
+											<li><a href="products2.html">榨汁机</a></li>
+											<li><a href="products2.html">微波炉</a></li>
+											<li><a href="products2.html">吸尘器</a></li>
+											<li><a href="products2.html">所有产品</a></li>
+										</ul>
+									</div>
+									<div class="col-sm-4">
+										<div class="w3ls_products_pos">
+											<h4>3折起<i>/销售</i></h4>
+											<img src="images/1.jpg" alt=" " class="img-responsive" />
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</ul>
+						</li>
+						<li><a href="mail.html">联系我们</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- //navigation -->
+	<!-- banner -->
+	<div class="banner">
+		<div class="container">
+			<h3>电子商城, <span>改变世界</span></h3>
+		</div>
+	</div>
+	<!-- //banner --> 
+	<!-- banner-bottom -->
+	<div class="banner-bottom">
+		<div class="container">
+			<div class="col-md-5 wthree_banner_bottom_left">
+				<div class="video-img">
+					<a class="play-icon popup-with-zoom-anim" href="#small-dialog">
+						<span class="glyphicon glyphicon-expand" aria-hidden="true"></span>
+					</a>
+				</div> 
+					<!-- pop-up-box -->     
+					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+					<!--//pop-up-box -->
+					<div id="small-dialog" class="mfp-hide">
+						<iframe src=""></iframe>
+					</div>
+					<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+					</script>
+			</div>
+			<div class="col-md-7 wthree_banner_bottom_right">
+				<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+					<ul id="myTab" class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home">手机</a></li>
+						<li role="presentation"><a href="#audio" role="tab" id="audio-tab" data-toggle="tab" aria-controls="audio">音响</a></li>
+						<li role="presentation"><a href="#video" role="tab" id="video-tab" data-toggle="tab" aria-controls="video">电脑</a></li>
+						<li role="presentation"><a href="#tv" role="tab" id="tv-tab" data-toggle="tab" aria-controls="tv">家用</a></li>
+						<li role="presentation"><a href="#kitchen" role="tab" id="kitchen-tab" data-toggle="tab" aria-controls="kitchen">厨房</a></li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						<div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+							<div class="agile_ecommerce_tabs">
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="images/3.jpg" alt=" " class="img-responsive" />
+										<img src="images/4.jpg" alt=" " class="img-responsive" />
+										<img src="images/5.jpg" alt=" " class="img-responsive" />
+										<img src="images/6.jpg" alt=" " class="img-responsive" />
+										<img src="images/7.jpg" alt=" " class="img-responsive" />
+										<img src="images/3.jpg" alt=" " class="img-responsive" />
+										<img src="images/4.jpg" alt=" " class="img-responsive" />
+										<img src="images/5.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div> 
+									<h5><a href="single.html">华为手机</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>￥2000</span> <i class="item_price">￥1800</i></p>
+										<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" /> 
+											<input type="hidden" name="w3ls_item" value="华为手机" /> 
+											<input type="hidden" name="amount" value="1800.00" />   
+											<button type="submit" class="w3ls-cart">加入购物车</button>
+										</form>  
+									</div>
+								</div>
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="images/4.jpg" alt=" " class="img-responsive" />
+										<img src="images/5.jpg" alt=" " class="img-responsive" />
+										<img src="images/6.jpg" alt=" " class="img-responsive" />
+										<img src="images/7.jpg" alt=" " class="img-responsive" />
+										<img src="images/3.jpg" alt=" " class="img-responsive" />
+										<img src="images/4.jpg" alt=" " class="img-responsive" />
+										<img src="images/5.jpg" alt=" " class="img-responsive" />
+										<img src="images/6.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a href="single.html">小米手机</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>￥2000</span> <i class="item_price">￥1800</i></p>
+										<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" /> 
+											<input type="hidden" name="w3ls_item" value="小米手机" /> 
+											<input type="hidden" name="amount" value="1800.00" />   
+											<button type="submit" class="w3ls-cart">加入购物车</button>
+										</form>
+									</div>
+								</div>
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="images/7.jpg" alt=" " class="img-responsive" />
+										<img src="images/6.jpg" alt=" " class="img-responsive" />
+										<img src="images/4.jpg" alt=" " class="img-responsive" />
+										<img src="images/3.jpg" alt=" " class="img-responsive" />
+										<img src="images/5.jpg" alt=" " class="img-responsive" />
+										<img src="images/7.jpg" alt=" " class="img-responsive" />
+										<img src="images/4.jpg" alt=" " class="img-responsive" />
+										<img src="images/6.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a href="single.html">诺基亚手机</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>￥2000</span> <i class="item_price">￥1800</i></p>
+										<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" /> 
+											<input type="hidden" name="w3ls_item" value="诺基亚手机" /> 
+											<input type="hidden" name="amount" value="1800.00"/>   
+											<button type="submit" class="w3ls-cart">加入购物车</button>
+										</form>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="audio" aria-labelledby="audio-tab">
+							<div class="agile_ecommerce_tabs">
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="images/8.jpg" alt=" " class="img-responsive" />
+										<img src="images/9.jpg" alt=" " class="img-responsive" />
+										<img src="images/10.jpg" alt=" " class="img-responsive" />
+										<img src="images/8.jpg" alt=" " class="img-responsive" />
+										<img src="images/9.jpg" alt=" " class="img-responsive" />
+										<img src="images/10.jpg" alt=" " class="img-responsive" />
+										<img src="images/8.jpg" alt=" " class="img-responsive" />
+										<img src="images/9.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a href="single.html">漫步者耳机</a></h5>
+										<p><span>￥1200</span> <i class="item_price">￥999</i></p>
+									<div class="simpleCart_shelfItem">
+										<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" /> 
+											<input type="hidden" name="w3ls_item" value="漫步者耳机" /> 
+											<input type="hidden" name="amount" value="999.00" />   
+											<button type="submit" class="w3ls-cart">加入购物车</button>
+										</form>
+									</div>
+								</div>
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="images/9.jpg" alt=" " class="img-responsive" />
+										<img src="images/8.jpg" alt=" " class="img-responsive" />
+										<img src="images/10.jpg" alt=" " class="img-responsive" />
+										<img src="images/8.jpg" alt=" " class="img-responsive" />
+										<img src="images/9.jpg" alt=" " class="img-responsive" />
+										<img src="images/10.jpg" alt=" " class="img-responsive" />
+										<img src="images/8.jpg" alt=" " class="img-responsive" />
+										<img src="images/9.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a href="single.html">爱国者耳机</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>￥1200</span> <i class="item_price">￥999</i></p>
+										<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" /> 
+											<input type="hidden" name="w3ls_item" value="Headphones" /> 
+											<input type="hidden" name="amount" value="999.00" />   
+											<button type="submit" class="w3ls-cart">加入购物车</button>
+										</form>
+									</div>
+								</div>
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="images/10.jpg" alt=" " class="img-responsive" />
+										<img src="images/8.jpg" alt=" " class="img-responsive" />
+										<img src="images/9.jpg" alt=" " class="img-responsive" />
+										<img src="images/8.jpg" alt=" " class="img-responsive" />
+										<img src="images/9.jpg" alt=" " class="img-responsive" />
+										<img src="images/10.jpg" alt=" " class="img-responsive" />
+										<img src="images/8.jpg" alt=" " class="img-responsive" />
+										<img src="images/9.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal1"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a href="single.html">Beats 耳机</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>￥1200</span> <i class="item_price">￥999</i></p>
+										<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" /> 
+											<input type="hidden" name="w3ls_item" value="Beats 耳机" /> 
+											<input type="hidden" name="amount" value="999.00"/>   
+											<button type="submit" class="w3ls-cart">加入购物车</button>
+										</form>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="video" aria-labelledby="video-tab">
+							<div class="agile_ecommerce_tabs">
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="images/11.jpg" alt=" " class="img-responsive" />
+										<img src="images/12.jpg" alt=" " class="img-responsive" />
+										<img src="images/13.jpg" alt=" " class="img-responsive" />
+										<img src="images/11.jpg" alt=" " class="img-responsive" />
+										<img src="images/12.jpg" alt=" " class="img-responsive" />
+										<img src="images/13.jpg" alt=" " class="img-responsive" />
+										<img src="images/11.jpg" alt=" " class="img-responsive" />
+										<img src="images/12.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a href="single.html">联想电脑</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>￥4800</span> <i class="item_price">￥4600</i></p>
+										<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" /> 
+											<input type="hidden" name="w3ls_item" value="联想电脑" /> 
+											<input type="hidden" name="amount" value="4600.00" />   
+											<button type="submit" class="w3ls-cart">加入购物车</button>
+										</form>
+									</div>
+								</div>
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="images/12.jpg" alt=" " class="img-responsive" />
+										<img src="images/11.jpg" alt=" " class="img-responsive" />
+										<img src="images/13.jpg" alt=" " class="img-responsive" />
+										<img src="images/11.jpg" alt=" " class="img-responsive" />
+										<img src="images/12.jpg" alt=" " class="img-responsive" />
+										<img src="images/13.jpg" alt=" " class="img-responsive" />
+										<img src="images/11.jpg" alt=" " class="img-responsive" />
+										<img src="images/12.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a href="single.html">惠普电脑</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>￥4800</span> <i class="item_price">￥4600</i></p>
+										<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" /> 
+											<input type="hidden" name="w3ls_item" value="惠普电脑" /> 
+											<input type="hidden" name="amount" value="4600.00" />   
+											<button type="submit" class="w3ls-cart">加入购物车</button>
+										</form>
+									</div>
+								</div>
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="images/13.jpg" alt=" " class="img-responsive" />
+										<img src="images/11.jpg" alt=" " class="img-responsive" />
+										<img src="images/12.jpg" alt=" " class="img-responsive" />
+										<img src="images/11.jpg" alt=" " class="img-responsive" />
+										<img src="images/12.jpg" alt=" " class="img-responsive" />
+										<img src="images/13.jpg" alt=" " class="img-responsive" />
+										<img src="images/11.jpg" alt=" " class="img-responsive" />
+										<img src="images/12.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a href="single.html">神舟电脑</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>￥4800</span> <i class="item_price">￥4600</i></p>
+										<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" /> 
+											<input type="hidden" name="w3ls_item" value="神舟电脑" /> 
+											<input type="hidden" name="amount" value="4600.00" />   
+											<button type="submit" class="w3ls-cart">加入购物车</button>
+										</form>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="tv" aria-labelledby="tv-tab">
+							<div class="agile_ecommerce_tabs">
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="images/14.jpg" alt=" " class="img-responsive" />
+										<img src="images/15.jpg" alt=" " class="img-responsive" />
+										<img src="images/16.jpg" alt=" " class="img-responsive" />
+										<img src="images/14.jpg" alt=" " class="img-responsive" />
+										<img src="images/15.jpg" alt=" " class="img-responsive" />
+										<img src="images/16.jpg" alt=" " class="img-responsive" />
+										<img src="images/14.jpg" alt=" " class="img-responsive" />
+										<img src="images/15.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal3"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a href="single.html">海尔冰箱</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>￥5000</span> <i class="item_price">￥4800</i></p>
+										<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" /> 
+											<input type="hidden" name="w3ls_item" value="海尔冰箱" /> 
+											<input type="hidden" name="amount" value="4800.00" />   
+											<button type="submit" class="w3ls-cart">加入购物车</button>
+										</form>
+									</div>
+								</div>
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="images/15.jpg" alt=" " class="img-responsive" />
+										<img src="images/14.jpg" alt=" " class="img-responsive" />
+										<img src="images/16.jpg" alt=" " class="img-responsive" />
+										<img src="images/14.jpg" alt=" " class="img-responsive" />
+										<img src="images/15.jpg" alt=" " class="img-responsive" />
+										<img src="images/16.jpg" alt=" " class="img-responsive" />
+										<img src="images/14.jpg" alt=" " class="img-responsive" />
+										<img src="images/15.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal3"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a href="single.html">松下冰箱</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>￥5000</span> <i class="item_price">￥4800</i></p>
+										<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" /> 
+											<input type="hidden" name="w3ls_item" value="松下冰箱"/> 
+											<input type="hidden" name="amount" value="4800.00"/>   
+											<button type="submit" class="w3ls-cart">加入购物车</button>
+										</form>
+									</div>
+								</div>
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="images/16.jpg" alt=" " class="img-responsive" />
+										<img src="images/14.jpg" alt=" " class="img-responsive" />
+										<img src="images/15.jpg" alt=" " class="img-responsive" />
+										<img src="images/14.jpg" alt=" " class="img-responsive" />
+										<img src="images/15.jpg" alt=" " class="img-responsive" />
+										<img src="images/16.jpg" alt=" " class="img-responsive" />
+										<img src="images/14.jpg" alt=" " class="img-responsive" />
+										<img src="images/15.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal3"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a href="single.html">奥克斯冰箱</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>￥5000</span> <i class="item_price">￥4800</i></p>
+										<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" /> 
+											<input type="hidden" name="w3ls_item" value="奥克斯冰箱" /> 
+											<input type="hidden" name="amount" value="4800.00" />   
+											<button type="submit" class="w3ls-cart">加入购物车</button>
+										</form>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="kitchen" aria-labelledby="kitchen-tab">
+							<div class="agile_ecommerce_tabs">
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="images/17.jpg" alt=" " class="img-responsive" />
+										<img src="images/18.jpg" alt=" " class="img-responsive" />
+										<img src="images/19.jpg" alt=" " class="img-responsive" />
+										<img src="images/17.jpg" alt=" " class="img-responsive" />
+										<img src="images/18.jpg" alt=" " class="img-responsive" />
+										<img src="images/19.jpg" alt=" " class="img-responsive" />
+										<img src="images/17.jpg" alt=" " class="img-responsive" />
+										<img src="images/18.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a href="single.html">九阳豆浆机</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>￥400</span> <i class="item_price">￥300</i></p>
+										<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" /> 
+											<input type="hidden" name="w3ls_item" value="九阳豆浆机" /> 
+											<input type="hidden" name="amount" value="300.00" />   
+											<button type="submit" class="w3ls-cart">加入购物车</button>
+										</form>
+									</div>
+								</div>
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="images/18.jpg" alt=" " class="img-responsive" />
+										<img src="images/17.jpg" alt=" " class="img-responsive" />
+										<img src="images/19.jpg" alt=" " class="img-responsive" />
+										<img src="images/17.jpg" alt=" " class="img-responsive" />
+										<img src="images/18.jpg" alt=" " class="img-responsive" />
+										<img src="images/19.jpg" alt=" " class="img-responsive" />
+										<img src="images/17.jpg" alt=" " class="img-responsive" />
+										<img src="images/18.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a href="single.html">美的豆浆机</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>￥400</span> <i class="item_price">￥300</i></p>
+										<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" /> 
+											<input type="hidden" name="w3ls_item" value="美的豆浆机" /> 
+											<input type="hidden" name="amount" value="300.00" />   
+											<button type="submit" class="w3ls-cart">加入购物车</button>
+										</form>
+									</div>
+								</div>
+								<div class="col-md-4 agile_ecommerce_tab_left">
+									<div class="hs-wrapper">
+										<img src="images/19.jpg" alt=" " class="img-responsive" />
+										<img src="images/17.jpg" alt=" " class="img-responsive" />
+										<img src="images/18.jpg" alt=" " class="img-responsive" />
+										<img src="images/17.jpg" alt=" " class="img-responsive" />
+										<img src="images/18.jpg" alt=" " class="img-responsive" />
+										<img src="images/19.jpg" alt=" " class="img-responsive" />
+										<img src="images/17.jpg" alt=" " class="img-responsive" />
+										<img src="images/18.jpg" alt=" " class="img-responsive" />
+										<div class="w3_hs_bottom">
+											<ul>
+												<li>
+													<a href="#" data-toggle="modal" data-target="#myModal4"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<h5><a href="single.html">飞利浦豆浆机</a></h5>
+									<div class="simpleCart_shelfItem">
+										<p><span>￥400</span> <i class="item_price">￥300</i></p>
+										<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" /> 
+											<input type="hidden" name="w3ls_item" value="飞利浦豆浆机" /> 
+											<input type="hidden" name="amount" value="300.00" />   
+											<button type="submit" class="w3ls-cart">加入购物车</button>
+										</form>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+				</div> 
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //banner-bottom --> 
+	<!-- modal-video -->
+	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div>
+				<section>
+					<div class="modal-body">
+						<div class="col-md-5 modal_body_left">
+							<img src="images/3.jpg" alt=" " class="img-responsive" />
+						</div>
+						<div class="col-md-7 modal_body_right">
+							<h4>华为手机</h4>
+							<p>华为消费者业务产品全面覆盖手机、移动宽带终端、终端云等，凭借自身的全球化网络优势、全球化运营能力，致力于将最新的科技带给消费者，让世界各地享受到技术进步的喜悦，以行践言，实现梦想。</p>
+							<div class="rating">
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="modal_body_right_cart simpleCart_shelfItem">
+								<p><span>￥2000</span> <i class="item_price">￥1800</i></p>
+								<form action="#" method="post">
+									<input type="hidden" name="cmd" value="_cart">
+									<input type="hidden" name="add" value="1"> 
+									<input type="hidden" name="w3ls_item" value="华为手机"> 
+									<input type="hidden" name="amount" value="1800.00">   
+									<button type="submit" class="w3ls-cart">加入购物车</button>
+								</form>
+							</div>
+							<h5>颜色</h5>
+							<div class="color-quality">
+								<ul>
+									<li><a href="#"><span></span></a></li>
+									<li><a href="#" class="brown"><span></span></a></li>
+									<li><a href="#" class="purple"><span></span></a></li>
+									<li><a href="#" class="gray"><span></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div class="modal video-modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal1">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div>
+				<section>
+					<div class="modal-body">
+						<div class="col-md-5 modal_body_left">
+							<img src="images/9.jpg" alt=" " class="img-responsive" />
+						</div>
+						<div class="col-md-7 modal_body_right">
+							<h4>漫步者耳机</h4>
+							<p>EDIFIER 漫步者 H185 低频浑厚、人声浓郁的时尚炫彩耳塞 赤金色
+                               H185低频浑厚、人声浓郁的时尚炫彩耳塞H185的设计理念主要体现在：绚丽多彩、低频出众。配色方面，赤金色、银绿色、电光蓝色三个时尚颜色可选，配合特殊结构的装饰件设计，个性彰显；
+                               音质方面，H185采用隐藏式导气孔设计、配以15mm高性能钕磁单体、6微米的超薄振膜，使得这款H185的低频浑厚有力、人声浓郁饱满，非常耐听。</p>
+							<div class="rating">
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="modal_body_right_cart simpleCart_shelfItem">
+								<p><span>￥1200</span> <i class="item_price">￥999</i></p>
+								<form action="#" method="post">
+									<input type="hidden" name="cmd" value="_cart">
+									<input type="hidden" name="add" value="1"> 
+									<input type="hidden" name="w3ls_item" value="小米手机"> 
+									<input type="hidden" name="amount" value="999.00">   
+									<button type="submit" class="w3ls-cart">加入购物车</button>
+								</form>
+							</div>
+							<h5>颜色</h5>
+							<div class="color-quality">
+								<ul>
+									<li><a href="#"><span></span></a></li>
+									<li><a href="#" class="brown"><span></span></a></li>
+									<li><a href="#" class="purple"><span></span></a></li>
+									<li><a href="#" class="gray"><span></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div class="modal video-modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div>
+				<section>
+					<div class="modal-body">
+						<div class="col-md-5 modal_body_left">
+							<img src="images/11.jpg" alt=" " class="img-responsive" />
+						</div>
+						<div class="col-md-7 modal_body_right">
+							<h4>联想电脑</h4>
+							<p>联想是中国驰名品牌，是全球第三大个人电脑厂商仅次于苹果与宏碁，名列《财富》世界500强，为全球前五大电脑厂商中增长最快 。
+                               联想电脑主要经营个人计算机、智能手机等。生产时是专业化、流水线作业，出厂关都经过严格的质量把关，由专业人员在电磁干扰、高低温、辐射等方面进行严格规范化测试。</p>
+							<div class="rating">
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="modal_body_right_cart simpleCart_shelfItem">
+								<p><span>￥4800</span> <i class="item_price">￥4600</i></p>
+								<form action="#" method="post">
+									<input type="hidden" name="cmd" value="_cart">
+									<input type="hidden" name="add" value="1"> 
+									<input type="hidden" name="w3ls_item" value="诺基亚手机"> 
+									<input type="hidden" name="amount" value="4600.00">   
+									<button type="submit" class="w3ls-cart">加入购物车</button>
+								</form>
+							</div>
+							<h5>颜色</h5>
+							<div class="color-quality">
+								<ul>
+									<li><a href="#"><span></span></a></li>
+									<li><a href="#" class="brown"><span></span></a></li>
+									<li><a href="#" class="purple"><span></span></a></li>
+									<li><a href="#" class="gray"><span></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div class="modal video-modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModal3">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div>
+				<section>
+					<div class="modal-body">
+						<div class="col-md-5 modal_body_left">
+							<img src="images/14.jpg" alt=" " class="img-responsive" />
+						</div>
+						<div class="col-md-7 modal_body_right">
+							<h4>海尔冰箱</h4>
+							<p>海尔冰箱自创立至今始终为中国消费者提供最好的服务。“砸冰箱”是海尔冰箱向消费者提供的是质量服务。在那个“纸糊的冰箱都能卖出去”的年代，海尔冰箱却通过“砸冰箱”树立起了员工“有缺陷的产品就是废品”的质量意识，制造出了高质量的海尔冰箱。直到今天，能够见证海尔卓越质量的冰箱仍然在用户家使用。</p>
+							<div class="rating">
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="modal_body_right_cart simpleCart_shelfItem">
+								<p><span>￥5000</span> <i class="item_price">Y4800</i></p>
+								<form action="#" method="post">
+									<input type="hidden" name="cmd" value="_cart">
+									<input type="hidden" name="add" value="1"> 
+									<input type="hidden" name="w3ls_item" value="海尔冰箱"> 
+									<input type="hidden" name="amount" value="4800.00">   
+									<button type="submit" class="w3ls-cart">加入购物车</button>
+								</form>
+							</div>
+							<h5>Color</h5>
+							<div class="color-quality">
+								<ul>
+									<li><a href="#"><span></span></a></li>
+									<li><a href="#" class="brown"><span></span></a></li>
+									<li><a href="#" class="purple"><span></span></a></li>
+									<li><a href="#" class="gray"><span></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div class="modal video-modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModal4">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div>
+				<section>
+					<div class="modal-body">
+						<div class="col-md-5 modal_body_left">
+							<img src="images/17.jpg" alt=" " class="img-responsive" />
+						</div>
+						<div class="col-md-7 modal_body_right">
+							<h4>九阳豆浆机</h4>
+							<p>1994年，九阳的第一台全自动家用豆浆机诞生。到现在为止，九阳豆浆机，制浆量900-1100ml，适用2-3人。可制作五谷豆浆、全豆豆浆、果蔬豆浆、玉米汁。且机器具有自动清洗、自动加热、连续制浆的功能。</p>
+							<div class="rating">
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="modal_body_right_cart simpleCart_shelfItem">
+								<p><span>￥400</span> <i class="item_price">￥300</i></p>
+								<form action="#" method="post">
+									<input type="hidden" name="cmd" value="_cart">
+									<input type="hidden" name="add" value="1"> 
+									<input type="hidden" name="w3ls_item" value="九阳豆浆机"> 
+									<input type="hidden" name="amount" value="300.00">   
+									<button type="submit" class="w3ls-cart">加入购物车</button>
+								</form>
+							</div>
+							<h5>颜色</h5>
+							<div class="color-quality">
+								<ul>
+									<li><a href="#"><span></span></a></li>
+									<li><a href="#" class="brown"><span></span></a></li>
+									<li><a href="#" class="purple"><span></span></a></li>
+									<li><a href="#" class="gray"><span></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div class="modal video-modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModal5">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div>
+				<section>
+					<div class="modal-body">
+						<div class="col-md-5 modal_body_left">
+							<img src="images/36.jpg" alt=" " class="img-responsive" />
+						</div>
+						<div class="col-md-7 modal_body_right">
+							<h4>生活家用</h4>
+							<p>家用吸尘器是利用风机叶轮在电动机的高速驱动下，叶轮中的叶片不断对空气做功，使叶轮中的空气得到能量，并以极高的速度排出风机。</p>
+							<div class="rating">
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="modal_body_right_cart simpleCart_shelfItem">
+								<p><span>￥960</span> <i class="item_price">￥920</i></p>
+								<form action="#" method="post">
+									<input type="hidden" name="cmd" value="_cart">
+									<input type="hidden" name="add" value="1"> 
+									<input type="hidden" name="w3ls_item" value="Vacuum Cleaner"> 
+									<input type="hidden" name="amount" value="920.00">   
+									<button type="submit" class="w3ls-cart">加入购物车</button>
+								</form>
+							</div>
+							<h5>颜色</h5>
+							<div class="color-quality">
+								<ul>
+									<li><a href="#"><span></span></a></li>
+									<li><a href="#" class="brown"><span></span></a></li>
+									<li><a href="#" class="purple"><span></span></a></li>
+									<li><a href="#" class="gray"><span></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div class="modal video-modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModal6">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div>
+				<section>
+					<div class="modal-body">
+						<div class="col-md-5 modal_body_left">
+							<img src="images/37.jpg" alt=" " class="img-responsive" />
+						</div>
+						<div class="col-md-7 modal_body_right">
+							<h4>榨汁机</h4>
+							<p>果汁机，就是用机械的方法将水果或蔬菜压榨成果汁的机器。一般果汁机的分类有几种，比较常见的一种是家用果汁机和商用果汁机。商用果汁机分的有万能果汁机、单缸果汁机、 双缸果汁机、三缸果汁机等。</p>
+							<div class="rating">
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star-.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="rating-left">
+									<img src="images/star.png" alt=" " class="img-responsive" />
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="modal_body_right_cart simpleCart_shelfItem">
+								<p><span>￥480</span> <i class="item_price">￥450</i></p>
+								<form action="#" method="post">
+									<input type="hidden" name="cmd" value="_cart">
+									<input type="hidden" name="add" value="1"> 
+									<input type="hidden" name="w3ls_item" value="Induction Stove"> 
+									<input type="hidden" name="amount" value="450.00">   
+									<button type="submit" class="w3ls-cart">加入购物车</button>
+								</form>
+							</div>
+							<h5>Color</h5>
+							<div class="color-quality">
+								<ul>
+									<li><a href="#"><span></span></a></li>
+									<li><a href="#" class="brown"><span></span></a></li>
+									<li><a href="#" class="purple"><span></span></a></li>
+									<li><a href="#" class="gray"><span></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<!-- //modal-video -->
+	<!-- banner-bottom1 -->
+	<div class="banner-bottom1">
+		<div class="agileinfo_banner_bottom1_grids">
+			<div class="col-md-7 agileinfo_banner_bottom1_grid_left">
+				<h3>2018新春大卖<span>2折起 <i>/促销</i></span></h3>
+				<a href="products.html">热卖>></a>
+			</div>
+			<div class="col-md-5 agileinfo_banner_bottom1_grid_right">
+				<h4>促销计时</h4>
+				<div class="timer_wrap">
+					<div id="counter"> </div>
+				</div>
+				<script src="js/jquery.countdown.js"></script>
+				<script src="js/script.js"></script>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //banner-bottom1 --> 
+	<!-- special-deals -->
+	<div class="special-deals">
+		<div class="container">
+			<h2>秒杀</h2>
+			<div class="w3agile_special_deals_grids">
+				<div class="col-md-7 w3agile_special_deals_grid_left">
+					<div class="w3agile_special_deals_grid_left_grid">
+						<img src="images/21.jpg" alt=" " class="img-responsive" />
+						<div class="w3agile_special_deals_grid_left_grid_pos1">
+							<h5>1折<span>秒杀/-</span></h5>
+						</div>
+						<div class="w3agile_special_deals_grid_left_grid_pos">
+							<h4>数码相机 <span>记录美好时光</span></h4>
+						</div>
+					</div>
+					<div class="wmuSlider example1">
+						<div class="wmuSliderWrapper">
+							<article style="position: absolute; width: 100%; opacity: 0;"> 
+								<div class="banner-wrap">
+									<div class="w3agile_special_deals_grid_left_grid1">
+										<img src="images/t1.png" alt=" " class="img-responsive" />
+										<p>1982年毕业于奥本大学工业工程专业。1988年获得杜克大学企业管理硕士学位。曾在IBM供职12 年，负责PC部门在北美和拉美的制造和分销运作。1998年年初，库克进入苹果，任副总裁，主管苹果的电脑制造业务。</p>
+										<h4>Laura</h4>
+									</div>
+								</div>
+							</article>
+							<article style="position: absolute; width: 100%; opacity: 0;"> 
+								<div class="banner-wrap">
+									<div class="w3agile_special_deals_grid_left_grid1">
+										<img src="images/t2.png" alt=" " class="img-responsive" />
+										<p>2015年3月，苹果CEO蒂姆·库克已计划捐献其全部财富。按库克持有的苹果股份计算，他的净资产为1.2亿美元。</p>
+										<h4>Michael</h4>
+									</div>
+								</div>
+							</article>
+							<article style="position: absolute; width: 100%; opacity: 0;"> 
+								<div class="banner-wrap">
+									<div class="w3agile_special_deals_grid_left_grid1">
+										<img src="images/t3.png" alt=" " class="img-responsive" />
+										<p>1976年4月1日，乔布斯签署了一份合同，决定成立一家电脑公司。1977年4月，乔布斯在美国第一次计算机展览会展示了苹果Ⅱ号样机。</p>
+										<h4>Rosy</h4>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+						<script src="js/jquery.wmuSlider.js"></script> 
+						<script>
+							$('.example1').wmuSlider();         
+						</script> 
+				</div>
+				<div class="col-md-5 w3agile_special_deals_grid_right">
+					<img src="images/20.jpg" alt=" " class="img-responsive" />
+					<div class="w3agile_special_deals_grid_right_pos">
+						<h4>手表世界<span>特卖</span></h4>
+						<h5>节省 30%</h5>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //special-deals -->
+	<!-- new-products -->
+	<div class="new-products">
+		<div class="container">
+			<h3>新产品特价</h3>
+			<div class="agileinfo_new_products_grids">
+				<div class="col-md-3 agileinfo_new_products_grid">
+					<div class="agile_ecommerce_tab_left agileinfo_new_products_grid1">
+						<div class="hs-wrapper hs-wrapper1">
+							<img src="images/25.jpg" alt=" " class="img-responsive" />
+							<img src="images/23.jpg" alt=" " class="img-responsive" />
+							<img src="images/24.jpg" alt=" " class="img-responsive" />
+							<img src="images/22.jpg" alt=" " class="img-responsive" />
+							<img src="images/26.jpg" alt=" " class="img-responsive" /> 
+							<div class="w3_hs_bottom w3_hs_bottom_sub">
+								<ul>
+									<li>
+										<a href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<h5><a href="single.html">联想电脑</a></h5>
+						<div class="simpleCart_shelfItem">
+							<p><span>￥4800</span> <i class="item_price">￥4600</i></p>
+							<form action="#" method="post">
+								<input type="hidden" name="cmd" value="_cart">
+								<input type="hidden" name="add" value="1"> 
+								<input type="hidden" name="w3ls_item" value="联想电脑"> 
+								<input type="hidden" name="amount" value="4600.00">   
+								<button type="submit" class="w3ls-cart">加入购物车</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 agileinfo_new_products_grid">
+					<div class="agile_ecommerce_tab_left agileinfo_new_products_grid1">
+						<div class="hs-wrapper hs-wrapper1">
+							<img src="images/27.jpg" alt=" " class="img-responsive" />
+							<img src="images/28.jpg" alt=" " class="img-responsive" />
+							<img src="images/29.jpg" alt=" " class="img-responsive" />
+							<img src="images/30.jpg" alt=" " class="img-responsive" />
+							<img src="images/31.jpg" alt=" " class="img-responsive" /> 
+							<div class="w3_hs_bottom w3_hs_bottom_sub">
+								<ul>
+									<li>
+										<a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<h5><a href="single.html">华为手机</a></h5>
+						<div class="simpleCart_shelfItem">
+							<p><span>￥2000</span> <i class="item_price">￥1800</i></p>
+							<form action="#" method="post">
+								<input type="hidden" name="cmd" value="_cart">
+								<input type="hidden" name="add" value="1"> 
+								<input type="hidden" name="w3ls_item" value="Black Phone"> 
+								<input type="hidden" name="amount" value="1800.00">   
+								<button type="submit" class="w3ls-cart">加入购物车</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 agileinfo_new_products_grid">
+					<div class="agile_ecommerce_tab_left agileinfo_new_products_grid1">
+						<div class="hs-wrapper hs-wrapper1">
+							<img src="images/34.jpg" alt=" " class="img-responsive" />
+							<img src="images/33.jpg" alt=" " class="img-responsive" />
+							<img src="images/32.jpg" alt=" " class="img-responsive" />
+							<img src="images/35.jpg" alt=" " class="img-responsive" />
+							<img src="images/36.jpg" alt=" " class="img-responsive" /> 
+							<div class="w3_hs_bottom w3_hs_bottom_sub">
+								<ul>
+									<li>
+										<a href="#" data-toggle="modal" data-target="#myModal5"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<h5><a href="single.html">吸尘器</a></h5>
+						<div class="simpleCart_shelfItem">
+							<p><span>￥2000</span> <i class="item_price">￥1800</i></p>
+							<form action="#" method="post">
+								<input type="hidden" name="cmd" value="_cart">
+								<input type="hidden" name="add" value="1"> 
+								<input type="hidden" name="w3ls_item" value="吸尘器"> 
+								<input type="hidden" name="amount" value="1800.00">   
+								<button type="submit" class="w3ls-cart">加入购物车</button>
+							</form>
+						</div>  
+					</div>
+				</div>
+				<div class="col-md-3 agileinfo_new_products_grid">
+					<div class="agile_ecommerce_tab_left agileinfo_new_products_grid1">
+						<div class="hs-wrapper hs-wrapper1">
+							<img src="images/37.jpg" alt=" " class="img-responsive" />
+							<img src="images/38.jpg" alt=" " class="img-responsive" />
+							<img src="images/39.jpg" alt=" " class="img-responsive" />
+							<img src="images/40.jpg" alt=" " class="img-responsive" />
+							<img src="images/41.jpg" alt=" " class="img-responsive" /> 
+							<div class="w3_hs_bottom w3_hs_bottom_sub">
+								<ul>
+									<li>
+										<a href="#" data-toggle="modal" data-target="#myModal6"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<h5><a href="single.html">榨汁机</a></h5>
+						<div class="simpleCart_shelfItem">
+							<p><span>￥480</span> <i class="item_price">￥450</i></p>
+							<form action="#" method="post">
+								<input type="hidden" name="cmd" value="_cart">
+								<input type="hidden" name="add" value="1"> 
+								<input type="hidden" name="w3ls_item" value="榨汁机"> 
+								<input type="hidden" name="amount" value="450.00">   
+								<button type="submit" class="w3ls-cart">加入购物车</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //new-products -->
+	<!-- top-brands -->
+	<div class="top-brands">
+		<div class="container">
+			<h3>赞助商</h3>
+			<div class="sliderfig">
+				<ul id="flexiselDemo1">			
+					<li>
+						<img src="images/tb1.jpg" alt=" " class="img-responsive" />
+					</li>
+					<li>
+						<img src="images/tb2.jpg" alt=" " class="img-responsive" />
+					</li>
+					<li>
+						<img src="images/tb3.jpg" alt=" " class="img-responsive" />
+					</li>
+					<li>
+						<img src="images/tb4.jpg" alt=" " class="img-responsive" />
+					</li>
+					<li>
+						<img src="images/tb5.jpg" alt=" " class="img-responsive" />
+					</li>
+				</ul>
+			</div>
+			<script type="text/javascript">
+					$(window).load(function() {
+						$("#flexiselDemo1").flexisel({
+							visibleItems: 4,
+							animationSpeed: 1000,
+							autoPlay: true,
+							autoPlaySpeed: 3000,    		
+							pauseOnHover: true,
+							enableResponsiveBreakpoints: true,
+							responsiveBreakpoints: { 
+								portrait: { 
+									changePoint:480,
+									visibleItems: 1
+								}, 
+								landscape: { 
+									changePoint:640,
+									visibleItems:2
+								},
+								tablet: { 
+									changePoint:768,
+									visibleItems: 3
+								}
+							}
+						});
+						
+					});
+			</script>
+			<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		</div>
+	</div>
+	<!-- //top-brands --> 
+	<!-- newsletter -->
+	<div class="newsletter">
+		<div class="container">
+			<div class="col-md-6 w3agile_newsletter_left">
+				<h3>发送邮件</h3>
+				<p>如有意见或者建议请给我们发送邮件</p>
+			</div>
+			<div class="col-md-6 w3agile_newsletter_right">
+				<form action="#" method="post">
+					<input type="email" name="Email" placeholder="Email" required="">
+					<input type="submit" value="" />
+				</form>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //newsletter -->
+	<!-- footer -->
+
+		<div class="footer-copy">
+			<div class="footer-copy1">
+				<div class="footer-copy-pos">
+					<a href="#home1" class="scroll"><img src="images/arrow.png" alt=" " class="img-responsive" /></a>
+				</div>
+			</div>
+		</div>
+
+	<!-- //footer --> 
+	<!-- cart-js -->
+	<script src="js/minicart.js"></script>
+	<script>
+        w3ls.render();
+
+        w3ls.cart.on('w3sb_checkout', function (evt) {
+        	var items, len, i;
+
+        	if (this.subtotal() > 0) {
+        		items = this.items();
+
+        		for (i = 0, len = items.length; i < len; i++) { 
+        		}
+        	}
+        });
+    </script>  
+	<!-- //cart-js -->   
+</body>
+</html>
